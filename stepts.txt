@@ -48,3 +48,22 @@ Introduccion
         README.md: archivo markdown para la documentación del proyecto.
         tsconfig.build.json: archivo principal para la configuración de TypeScript.
         tsconfig.json: extensión con más configuraciones de TypeScript.
+
+
+5.Repaso a TypeScript: tipos y POO
+
+    NestJS utiliza TypeScript como lenguaje de programación y conocer sus características y qué le adiciona a Javascript te convertirá en un profesional más completo de esta tecnología.
+
+    Qué es TypeScript
+        TypeScript es un lenguaje de programación mantenido por Microsoft. En otras palabras, es un “superconjunto” de Javascript que le agrega tipado de datos y programación orientada a objetos.
+        El código fuente escrito en TypeScript, se “transpila” a código Javascript que es el que finalmente entienden los intérpretes de Javascript como los navegadores web o NodeJS.
+
+    Tipado de Datos con TypeScript
+        Con Javascript puedes crear una variable del tipo String y posteriormente asignarle un valor del tipo Entero o Boolean. Esto es propenso a tener errores en tiempo de ejecución.
+        TypeScript permite tipar los datos para que estos no cambien de tipo.
+    
+    POO con TypeScript
+        Javascript permite el desarrollo de aplicaciones utilizando POO basada en Prototipos. Puedes tomar el Curso Básico de Programación Orientada a Objetos con JavaScript para entrar en más detalle.
+        TypeScript llega para permitir escribir código utilizando los conceptos de la POO más fácilmente con clases, herencia, polimorfismo, etc.
+
+    Archivo src/recap.ts para poner en practica estos conceptos
