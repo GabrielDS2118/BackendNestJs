@@ -85,8 +85,36 @@ REST API
             Hacer endpoint 'nuevo'
     
     7 Get: Como recibir parametros
-    
+
         app.controller.ts:
             :parametro
             Obtener parametro:
                 @Param('nombreparametro') nombreparametro: string
+    
+    8. Get: Parametros Query
+
+        Diferencia de Parámetros de Ruta y Parámetros de query
+            Los parámetros de ruta se utilizan para IDs u otros identificadores obligatorios, 
+            mientras que los parámetros de consulta se utilizan para aplicar filtros opcionales a una consulta. 
+            Utilízalos apropiadamente en tus endpoints según tengas la necesidad
+
+        app.controllers.ts:
+
+            Endpoint 'products':
+                Parametros Query -> limit , offset y brand
+                Sin valores por defecto
+                    http://localhost:3000/products?limit=20&offset=40&brand=nike
+                Con valores por defecto
+                    http://localhost:3000/products?brand=puma
+                
+            Sintax Parametros Query
+                @Query('nombreparamquery') nombreparamquery: tipodedato 
+                 @Query('nombreparamquery') nombreparamquery = valor  (Por defecto)
+        
+
+            Evitar el bloqueo de rutas:
+
+                product/filter  (Ruta estatica primero)
+                product/:productId (Ruta dinamica despues)
+
+    
