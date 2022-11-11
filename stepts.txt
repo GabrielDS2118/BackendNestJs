@@ -67,3 +67,19 @@ Introduccion
         TypeScript llega para permitir escribir código utilizando los conceptos de la POO más fácilmente con clases, herencia, polimorfismo, etc.
 
     Archivo src/recap.ts para poner en practica estos conceptos
+
+
+REST API
+
+    6-Introduccion a controladores
+
+        Controladores:
+            Reciben request, validan tipos y permisos
+            Si todo esta bien se conecta a los servicios (responsables de la lógica y obtención de datos desde una BBDD que el controlador requiere)
+        
+        Correr la aplicacion en modo de desarrollo (guarda cambios sin necesisdad de volver a correr el servidor)
+            ecommerce-platzi/
+                npm run start:dev
+        
+        app.controller.ts: 
+            Hacer endpoint 'nuevo'
