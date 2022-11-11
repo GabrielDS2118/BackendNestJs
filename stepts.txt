@@ -83,3 +83,10 @@ REST API
         
         app.controller.ts: 
             Hacer endpoint 'nuevo'
+    
+    7 Get: Como recibir parametros
+    
+        app.controller.ts:
+            :parametro
+            Obtener parametro:
+                @Param('nombreparametro') nombreparametro: string
