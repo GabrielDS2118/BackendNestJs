@@ -160,3 +160,9 @@ REST API
             Cuerpo de la solicitud: @Body()
     
     12.Métodos PUT Y DELETE
+
+    13. Códigos de estado
+        @HttpCode(HttpStatus.NombreStatusCode)
+        Al darle click derecho a HttpStatus > Go to Definition , se mostrará una lista de Status code
+    
+    
