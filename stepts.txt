@@ -159,4 +159,4 @@ REST API
             Crear nuevo endpoint @Post()
             Cuerpo de la solicitud: @Body()
     
-    
+    12.Métodos PUT Y DELETE
