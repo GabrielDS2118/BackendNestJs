@@ -165,4 +165,34 @@ REST API
         @HttpCode(HttpStatus.NombreStatusCode)
         Al darle click derecho a HttpStatus > Go to Definition , se mostrará una lista de Status code
     
+
+INTEGRIDAD DE DATOS
+
+    14.Introducción a Servicios
+
+        Servicios en NestJS:
+            Son los que suelen tener la lógica del negocio y la conexión con la base de datos
+            Un servicio tiene la responsabilidad de gestionar el trabajo con los datos de la aplicación, de modo que realiza las operaciones para obtener esos datos, modificarlos, etc
+        
+        Creacion de Servicios
+            ecommerce-platzi/ -> nest g s services/products --flat
+            En app.module.ts se agrega el ProductsService en el array de providers
+        
+        Analizar Servicios
+
+            Decorador servicios -> @Injectable()
+
+            entities/product.entity.ts 
+                Crear schema para los productos
+
+            products.service.ts
+                Hacer un Array de tipo Product y agregar un producto de prueba
+
+                Métodos: 
+                    findAll() -> retorna el array de products, 
+                    findOne() -> Con un id busca el producto, 
+                    create() -> 
+                        Guardar en el array un producto(payload), el cual se pasa como parametro
+                        Generar id
+
     
