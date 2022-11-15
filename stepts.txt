@@ -117,4 +117,37 @@ REST API
                 product/filter  (Ruta estatica primero)
                 product/:productId (Ruta dinamica despues)
 
-    
+    9.Separacion de responsabilidades
+
+        En app.controller.ts estamos manejando endpoints para categorias y productos
+        Debemos separar responsabilidades
+
+        Generar controladores desde la cli
+
+            ecommerce-platzi/ 
+
+                nest g controller controllers/products --flat
+                nest g controller controllers/categories --flat
+
+                Al ejecutar estos comando se modifica app.module.ts para agregar estos array 
+                al array de controladores
+        
+        Organizar metodos
+
+            categories.controller.ts y products.controller.ts
+
+                Pasar todos los metodos de products y categories a sus respectivos controladores
+
+                Nombres de los endpoints
+
+                    @Controller('categories')
+                    @Controller('products)
+                    Todos los endpoints estarán precedidos por lo que esta entre los () del @Controller
+                    No es necesario poner el eslash
+        
+        Crear los demas controladores
+            ecommerce-platzi/
+                nest g controller controllers/orders --flat
+                nest g controller controllers/users --flat
+                nest g controller controllers/customers --flat
+                nest g controller controllers/brands --flat
