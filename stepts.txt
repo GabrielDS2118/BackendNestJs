@@ -151,3 +151,12 @@ REST API
                 nest g controller controllers/users --flat
                 nest g controller controllers/customers --flat
                 nest g controller controllers/brands --flat
+        
+    11.Qué es el método POST
+
+        products.controller.ts
+
+            Crear nuevo endpoint @Post()
+            Cuerpo de la solicitud: @Body()
+    
+    
