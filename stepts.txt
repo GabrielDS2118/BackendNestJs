@@ -195,4 +195,21 @@ INTEGRIDAD DE DATOS
                         Guardar en el array un producto(payload), el cual se pasa como parametro
                         Generar id
 
-    
+    15.Implementando servicios en controladores
+
+        product.services.ts 
+
+            Método update(id,payload):
+
+                Buscar el producto usando el metodo finOne()
+
+                Si existe el producto:
+                    Buscar el index del producto
+                    En la posicion del producto remplazar lo que habia con lo que se envia en el payload
+                    Retorna el producto actualizado
+
+        products.controller.ts 
+            Importar el ProductServices e incluirlo en el constructor
+            En cada metodo del controlador llamar a los métodos del servicio
+
+        Probar endpoints en insomnia
