@@ -213,3 +213,5 @@ INTEGRIDAD DE DATOS
             En cada metodo del controlador llamar a los métodos del servicio
 
         Probar endpoints en insomnia
+    
+    16.Manejo de errores con throw y NotFoundException
