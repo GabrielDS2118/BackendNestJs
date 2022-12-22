@@ -215,3 +215,20 @@ INTEGRIDAD DE DATOS
         Probar endpoints en insomnia
     
     16.Manejo de errores con throw y NotFoundException
+
+        products.service.ts
+            First Error: Primero manejamos el error antes de hacer los procesos
+            NotFoundException: Retorna un status code 404
+    
+    17.Introduccion a pipes: usa tu primer pipes
+        Transformar y validar informacion
+        La salida de una pueder ser la entrada de otro (tuberias)
+
+        products.controller.ts 
+            ParseIntPipe -> Convierte el id de string a number
+                            Valida que se ingrese un string numeric
+
+    18.Crea tu propio pipes
+        nest g pipe common/parse-int
+
+    
