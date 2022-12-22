@@ -231,4 +231,19 @@ INTEGRIDAD DE DATOS
     18.Crea tu propio pipes
         nest g pipe common/parse-int
 
-    
+    19.Data Transfers Objects
+
+        Validar body 
+
+        Creacion
+        
+            src/dtos -> products.dtos.ts
+                        UpdateProductDto -> ? denota que el atributo es opcional
+        
+        Aplicar:
+            products.controller.ts
+                En los métodos Post y Put el payload ya no será de tipo any
+                Ahora el payload será del tipo del Data Transfers Objects
+                Lo mismo sucederá con los metodos asociados en los servicios(products.service.ts)
+        
+
